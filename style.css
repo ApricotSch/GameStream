@@ -2631,3 +2631,38 @@ img[src="images/console.png"] {
   /* transform: translateY(50px); */
 }
 
+.team-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.team-member {
+  width: 180px;   /* atur lebar */
+  text-align: center;
+}
+
+.team-card {
+  text-align: center;
+  padding: 10px;
+}
+
+.member-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 10px 0 5px 0;
+}
+
+.member-desc {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+  max-width: 200px;   /* biar gak kepanjangan */
+  margin: 0 auto;
+  min-height: 45px;   /* biar semua sejajar walau teks pendek */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;  /* maksimal 3 baris */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
