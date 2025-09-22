@@ -2621,14 +2621,12 @@ img[src="images/console.png"] {
   position: relative;
   display: block;
   margin: 0 auto;        /* center horizontal */
-  max-width: 500px;      /* atur ukuran */
+  width: 80%;           /* penuh sesuai parent */
+  max-width: 650px;      /* tapi dibatasi biar ga kebesaran */
   height: auto;
   z-index: 5;
 
-  /* Atur tinggi */
-  margin-top: 80px;      /* geser ke bawah */
-  /* atau bisa pakai */
-  /* transform: translateY(50px); */
+  margin-top: 40px;      /* geser ke bawah dikit */
 }
 
 .team-wrapper {
