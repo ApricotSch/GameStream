@@ -17,13 +17,14 @@
          $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
   :class="{'b eh': darkMode === true}">
   <!-- ===== Header Start ===== -->
+  <!-- ===== Header Start ===== -->
   <header class="g s r vd ya cj" :class="{ 'hh sm _k dj bl ll' : stickyMenu }"
     @scroll.window="stickyMenu = (window.pageYOffset > 20) ? true : false">
     <div class="bb ze ki xn 2xl:ud-px-0 oo wf yf i">
       <div class="vd to/4 tc wf yf">
         <a href="index.html">
-          <img class="om" src="images/logo-light.svg" alt="Logo Light" />
-          <img class="xc nm" src="images/logo-dark.svg" alt="Logo Dark" />
+          <img class="om" src="images/logokanan.svg" alt="Logo Light" />
+          <img class="xc nm" src="images/logokanan.svg" alt="Logo Dark" />
         </a>
 
         <!-- Hamburger Toggle BTN -->
@@ -47,11 +48,11 @@
         <nav>
           <ul class="tc _o sf yo cg ep">
             <li><a href="index.html" class="xl" :class="{ 'mk': page === 'home' }">Home</a></li>
-            <li><a href="index.html#features" class="xl">Features</a></li>
+            <li><a href="index.html#features" class="xl">Fitur</a></li>
             <li class="c i" x-data="{ dropdown: false }">
               <a href="#!" class="xl tc wf yf bg" @click.prevent="dropdown = !dropdown"
                 :class="{ 'mk': page === 'blog-grid' || page === 'blog-single' || page === 'signin' || page === 'signup' || page === '404' }">
-                Pages
+                Koleksi Game
 
                 <svg :class="{ 'wh': dropdown }" class="th mm we fd pf" xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512">
@@ -62,15 +63,16 @@
 
               <!-- Dropdown Start -->
               <ul class="a" :class="{ 'tc': dropdown }">
-                <li><a href="blog-grid.html" class="xl" :class="{ 'mk': page === 'blog-grid' }">Blog Grid</a></li>
-                <li><a href="blog-single.html" class="xl" :class="{ 'mk': page === 'blog-single' }">Blog Single</a></li>
-                <li><a href="signin.html" class="xl" :class="{ 'mk': page === 'signin' }">Sign In</a></li>
+                <li><a href="blog-grid.html" class="xl" :class="{ 'mk': page === 'blog-grid' }">Game Library</a></li>
+                <li><a href="blog-single.html" class="xl" :class="{ 'mk': page === 'blog-single' }">Game Review</a></li>
+                <!-- <li><a href="signin.html" class="xl" :class="{ 'mk': page === 'signin' }">Sign In</a></li>
                 <li><a href="signup.html" class="xl" :class="{ 'mk': page === 'signup' }">Sign Up</a></li>
-                <li><a href="404.html" class="xl" :class="{ 'mk': page === '404' }">404</a></li>
+                <li><a href="404.html" class="xl" :class="{ 'mk': page === '404' }">404</a></li> -->
               </ul>
               <!-- Dropdown End -->
             </li>
             <li><a href="index.html#support" class="xl">Support</a></li>
+            <li><a href="index.html#portofolio" class="xl">Portofolio</a></li>
           </ul>
         </nav>
 
@@ -109,43 +111,22 @@
           <div class="ro">
             <div
               class="animate_top rounded-md shadow-solid-13 bg-white dark:bg-blacksection border border-stroke dark:border-strokedark p-7.5 md:p-10">
-              <img src="images/blog-big.png" alt="Blog" />
+              <img src="images/Login.png" alt="Blog" />
 
-              <h2 class="ek vj 2xl:ud-text-title-lg kk wm nb gb">Kobe Steel plant that supplied</h2>
-
-              <ul class="tc uf cg 2xl:ud-gap-15 fb">
-                <li><span class="rc kk wm">Author: </span> Devid Cleriya</li>
-                <li><span class="rc kk wm">Published On: </span> April 16, 2025</li>
-                <li><span class="rc kk wm">Category: </span> Events</li>
-              </ul>
+              <h2 class="ek vj 2xl:ud-text-title-lg kk wm nb gb">Interface Premium, Ribuan Game di Genggaman</h2>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a
-                efficitur leo. Ut venenatis rhoncus quam sed condimentum. Curabitur vel turpis in dolor volutpat
-                imperdiet in ut mi. Integer non volutpat nulla. Nunc elementum elit viverra, tempus quam non, interdum
-                ipsum.
+                Antarmuka pengguna kami dirancang dengan filosofi "akses instan dan navigasi intuitif". Kami memahami bahwa gamer ingin menghabiskan lebih banyak waktu bermain dan lebih sedikit waktu mencari. Oleh karena itu, dashboard utama menampilkan koleksi game yang dikurasi secara dinamis berdasarkan riwayat bermain, tren terbaru, dan rekomendasi personal. Setiap elemen visual—mulai dari banner hingga kartu game—dioptimalkan agar loading cepat dan responsif, menjamin pengalaman menjelajah yang mulus bahkan pada koneksi yang kurang stabil.
               </p>
 
               <p class="ob">
-                Aenean augue ex, condimentum vel metus vitae, aliquam porta elit. Quisque non metus ac orci mollis
-                posuere. Mauris vel ipsum a diam interdum ultricies sed vitae neque. Nulla
-                porttitor quam vitae pulvinar placerat. Nulla fringilla elit sit amet justo feugiat sodales. Morbi
-                eleifend, enim non eleifend laoreet, odio libero lobortis lectus, non porttitor sem
-                urna sit amet metus. In sollicitudin quam est, pellentesque consectetur felis fermentum vitae.
+                Di balik tampilan yang elegan, terdapat sistem backend yang kuat yang mendukung skalabilitas ribuan judul game. Kami mengimplementasikan smart tagging dan advanced search algorithm sehingga pengguna dapat menyaring katalog raksasa dengan mudah, menemukan game berdasarkan genre, pengembang, atau bahkan rating. Selain itu, fitur Quick Launch yang terintegrasi pada home screen memastikan bahwa game terakhir yang dimainkan dapat dilanjutkan dalam hitungan detik, menegaskan janji kami untuk zero friction gaming.
               </p>
 
               <div class="wc qf pn dg cb">
-                <img src="images/blog-04.png" alt="Blog" />
-                <img src="images/blog-05.png" alt="Blog" />
+                <img src="images/HomeApp.png" alt="Blog" />
+                <img src="images/Settings.png" alt="Blog" />
               </div>
-
-              <h2 class="ek vj 2xl:ud-text-title-lg kk wm nb qb">The powerful force of humanity</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a
-                efficitur leo. Ut venenatis rhoncus quam sed condimentum. Curabitur vel
-                turpis in dolor volutpat imperdiet in ut mi. Integer non volutpat nulla. Nunc elementum elit viverra,
-                tempus quam non, interdum ipsum.
-              </p>
 
               <ul class="tc wf bg sb">
                 <li>
@@ -238,48 +219,26 @@
               </form>
             </div>
 
-            <div class="animate_top fb">
-              <h4 class="tj kk wm qb">Categories</h4>
-
-              <ul>
-                <li class="ql vb du-ease-in-out il xl">
-                  <a href="#!">Blog</a>
-                </li>
-                <li class="ql vb du-ease-in-out il xl">
-                  <a href="#!">Events</a>
-                </li>
-                <li class="ql vb du-ease-in-out il xl">
-                  <a href="#!">Grids</a>
-                </li>
-                <li class="ql vb du-ease-in-out il xl">
-                  <a href="#!">News</a>
-                </li>
-                <li class="ql vb du-ease-in-out il xl">
-                  <a href="#!">Rounded</a>
-                </li>
-              </ul>
-            </div>
-
             <div class="animate_top">
               <h4 class="tj kk wm qb">Related Posts</h4>
 
               <div>
                 <div class="tc fg 2xl:ud-gap-6 qb">
-                  <img src="images/blog-small-01.png" alt="Blog" />
+                  <img src="images/login-small.png" alt="Blog" />
                   <h5 class="wj kk wm xl bn ml il">
-                    <a href="#!">Free advertising for your online business</a>
+                    <a href="#!">Mudah main game apa saja</a>
                   </h5>
                 </div>
                 <div class="tc fg 2xl:ud-gap-6 qb">
-                  <img src="images/blog-small-02.png" alt="Blog" />
+                  <img src="images/kemitraan-small.png" alt="Blog" />
                   <h5 class="wj kk wm xl bn ml il">
-                    <a href="#!">9 simple ways to improve your design skills</a>
+                    <a href="#!">Didukung oleh Raksasa Industri Gaming Global</a>
                   </h5>
                 </div>
                 <div class="tc fg 2xl:ud-gap-6">
-                  <img src="images/blog-small-03.png" alt="Blog" />
+                  <img src="images/loading-small.png" alt="Blog" />
                   <h5 class="wj kk wm xl bn ml il">
-                    <a href="#!">Tips to quickly improve your coding speed.</a>
+                    <a href="#!">"Loading? Apa Itu?" - Waktu Tunggu Dihilangkan</a>
                   </h5>
                 </div>
               </div>
@@ -291,7 +250,7 @@
     <!-- ===== Blog Single End ===== -->
 
     <!-- ===== CTA Start ===== -->
-    <section class="i pg gh ji">
+   <section class="i pg gh ji">
       <!-- Bg Shape -->
       <img class="h p q" src="images/shape-16.svg" alt="Bg Shape" />
 
@@ -299,16 +258,15 @@
         <div class="tc uf sn tn un gg">
           <div class="animate_left to/2">
             <h2 class="fk vj zp pr lk ac">
-              Join with 5000+ Startups Growing with Base.
+              Join bersama Ribuan Gamer lainnya
             </h2>
             <p class="lk">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a
-              efficitur leo. Ut venenatis rhoncus.
+              Hobi game gak harus mahal
             </p>
           </div>
           <div class="animate_right bf">
             <a href="#!" class="vc ek kk hh rg ol il cm gi hi">
-              Get Started Now
+              Coba Sekarang
             </a>
           </div>
         </div>
@@ -318,18 +276,18 @@
     <!-- ===== CTA End ===== -->
   </main>
   <!-- ===== Footer Start ===== -->
-  <footer>
+   <footer>
     <div class="bb ze ki xn 2xl:ud-px-0">
       <!-- Footer Top -->
       <div class="ji gp">
         <div class="tc uf ap gg fp">
           <div class="animate_top zd/2 to/4">
             <a href="index.html">
-              <img src="images/logo-light.svg" alt="Logo" class="om" />
-              <img src="images/logo-dark.svg" alt="Logo" class="xc nm" />
+              <img src="images/logokanan.svg" alt="Logo" class="om" />
+              <img src="images/logokanan.svg" alt="Logo" class="xc nm" />
             </a>
 
-            <p class="lc fb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="lc fb">GameStream, Hobi mu ada di jangkauan mu</p>
 
             <ul class="tc wf cg">
               <li>
@@ -411,7 +369,7 @@
                 <li><a href="#!" class="sc xl vb">Product</a></li>
                 <li>
                   <a href="#!" class="sc xl vb">
-                    Careers
+                    Review
 
                   </a>
                 </li>
@@ -423,10 +381,9 @@
               <h4 class="kk wm tj ec">Services</h4>
 
               <ul>
-                <li><a href="#!" class="sc xl vb">Web Development</a></li>
-                <li><a href="#!" class="sc xl vb">Graphics Design</a></li>
-                <li><a href="#!" class="sc xl vb">Digital Marketing</a></li>
-                <li><a href="#!" class="sc xl vb">Ui/Ux Design</a></li>
+                <li><a href="#!" class="sc xl vb">Cloud Gaming</a></li>
+                <li><a href="#!" class="sc xl vb">Library Game</a></li>
+                <li><a href="#!" class="sc xl vb">Game News</a></li>
               </ul>
             </div>
 
@@ -445,7 +402,7 @@
               <h4 class="kk wm tj ec">Newsletter</h4>
               <p class="ac qe">Subscribe to receive future updates</p>
 
-              <form action="https://formbold.com/s/unique_form_id" method="POST">
+              <form action="#!" method="#!">
                 <div class="i">
                   <input type="text" placeholder="Email address" class="vd sm _g ch pm vk xm rg gm dm dn gi mi" />
 
@@ -483,14 +440,12 @@
         </div>
 
         <div class="animate_top">
-          <p>&copy; 2025 Base. All rights reserved. Distributed by <a href="https://themewagon.com"
-              target="_blank">ThemeWagon</a></p>
+          <p>&copy; 2025 Base. All rights reserved. Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a></p>
         </div>
       </div>
       <!-- Footer Bottom -->
     </div>
   </footer>
-
   <!-- ===== Footer End ===== -->
 
   <!-- ====== Back To Top Start ===== -->
